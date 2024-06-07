@@ -1,6 +1,6 @@
 # [level 0] 숫자 비교하기 - 120807 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120807?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120807) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 31일 14:16:43
+2024년 06월 07일 18:07:49
 
 ### 문제 설명
 
