@@ -39,3 +39,5 @@ function solution(s) {
     
     return answer = newTxt.join(" ");
 }
+
+console.log("결과 : " + solution("try hello world"));
