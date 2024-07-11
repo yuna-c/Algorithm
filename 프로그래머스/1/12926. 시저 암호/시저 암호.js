@@ -1,19 +1,18 @@
 function solution(s, n) {
-    // var answer = '';
-    console.log(typeof n);
-    console.log(typeof s);
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let answer = [];
     
-    // return answer;
-    
-      return [...s].map((al) => {
-      if (al === " ") return " ";
-      const code = al.charCodeAt(0);
-      if ((code + n > 90 && code <= 90) || code + n > 122) {
-        return String.fromCharCode(code + n - 26);
-      } else {
-        return String.fromCharCode(code + n);
-      }
-    })
-    .join("");
-
+    for(let i = 0;i < s.length; i++){
+        if(lower.indexOf(s[i]) !== -1){
+            answer.push(lower[(lower.indexOf(s[i]) + n) % 26]);
+        }   
+        if(upper.indexOf(s[i]) !== -1){
+            answer.push(upper[(upper.indexOf(s[i]) + n) % 26]);
+        }
+        if(s[i] === " "){
+            answer.push(" ");
+        }
+    }
+    return answer.join('');
 }
