@@ -8,12 +8,13 @@ function solution(food) {
     // repeat(); '문자열'을 주어진 횟수만큼 반복해 붙임 
     // reverse(); 뒤집기
     // join(); 합치기
-    food.map((e,i) => {
+    // food 선
+    let foods = food.map((e,i) => {
         if(e > 1){ // 물은 빼야 하기 때문에 물이 1보다 작은 경우의 조건으로 필터링
-            answer += String(i).repeat(e / 2); 
+            answer += (i+'').repeat(e / 2); 
         }
     });
-    return answer = `${answer}0${[...answer].reverse().join("")}`;
+    return answer = `${foods}0${[...foods].reverse().join("")}`;
     // [...answer] 스프레드 연산자를 통해 얕은 복사(원본 안 건들게) 후 진행
 }
 console.log(solution([1,3,4,6]));
