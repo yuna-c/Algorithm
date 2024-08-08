@@ -11,3 +11,8 @@
 // solution 2 : reverse() 
 const solution = (num_list) => num_list.reverse();
 
+// solution 3 : reverse(), spead 깊은 복사(원본배열 살아 있음) 
+// const solution = (num_list) => [...num_list].reverse();
+
+// solution 4 : sort() 
+// const solution = (num_list) => num_list.sort((a, b) => -1);
