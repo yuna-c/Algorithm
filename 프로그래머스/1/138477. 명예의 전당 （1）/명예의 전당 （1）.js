@@ -10,7 +10,6 @@ function solution(k, score) {
         award.sort((a,b)=> b-a);
         if(award.length === k+1){
             award.pop();
-            // console.log(award.pop());
         }
         answer.push(award[award.length -1])
     }
