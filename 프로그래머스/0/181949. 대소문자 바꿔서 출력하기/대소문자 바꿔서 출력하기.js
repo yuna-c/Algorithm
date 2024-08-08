@@ -31,14 +31,14 @@ rl.on('line', function (line) {
     // console.log(str.join(''));
     
     // 4-2 forEach 배열로 만들어 push 
-    let arr = [];
-    str.split('').forEach((s) => arr.push(s === s.toUpperCase() ? s.toLowerCase() : s.toUpperCase()));
-    console.log(arr.join(''));
+    // let arr = [];
+    // str.split('').forEach((s) => arr.push(s === s.toUpperCase() ? s.toLowerCase() : s.toUpperCase()));
+    // console.log(arr.join(''));
     
     // 5 reduce
-    // const parse = str.split('').reduce((acc, curr)=> {
-    //     return curr.toUpperCase() === curr ? acc + curr.toLowerCase() : acc + curr.toUpperCase();
-    // }, '')
-    // console.log(parse);
+    const parse = str.split('').reduce((acc, curr)=> {
+        return curr.toUpperCase() === curr ? acc + curr.toLowerCase() : acc + curr.toUpperCase();
+    }, '')
+    console.log(parse);
 
 });
