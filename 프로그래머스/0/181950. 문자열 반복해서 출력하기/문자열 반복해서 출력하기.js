@@ -11,9 +11,5 @@ rl.on('line', function (line) {
 }).on('close', function () {
     str = input[0];
     n = Number(input[1]);
-    // console.log(str.repeat(n));
-    for (i = 0; i < n; i++){
-        process.stdout.write(str); // 개행을 하지 않는 출력 메소드
-    };
-  
+    console.log(str.repeat(n));
 });
