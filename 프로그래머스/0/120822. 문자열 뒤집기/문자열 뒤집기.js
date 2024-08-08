@@ -1,6 +1,9 @@
-function solution(my_string) {
-    let answer = '';
-    console.log(my_string); //문자열
-    answer = [...my_string].reverse().join('');
-    return answer;
-}
+// function solution(my_string) {
+//     let reverse = '';
+//     console.log(my_string); //문자열
+//     // reverse = [...my_string].reverse().join('');
+//     reverse = my_string.split('').reverse().join('');
+//     return reverse;
+// }
+
+const solution = (my_string) => [...my_string].reverse().join('');
