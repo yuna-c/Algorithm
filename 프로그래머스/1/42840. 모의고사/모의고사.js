@@ -22,6 +22,5 @@ function solution(answers) {
     const maxScore = Math.max(...scores);
     
     // 가장 높은 점수를 받은 수포자의 번호를 반환
-    return scores.map((score, i) => score === maxScore ? i + 1 : null ).filter(val => val !== null);
-    // 오름차순 return
+    return scores.map((score, i) => score === maxScore ? i + 1 : null).filter(val => val !== null);
 }
