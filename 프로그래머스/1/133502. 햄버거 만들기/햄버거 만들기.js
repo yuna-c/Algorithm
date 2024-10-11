@@ -6,8 +6,8 @@ function solution(ingredient) {
         stack.push(item);
         
     if (stack.slice(-4).join('') === '1231') {
-      answer++;
-      stack.splice(-4);
+        answer++;
+        stack.splice(-4);
         }
     }
     
