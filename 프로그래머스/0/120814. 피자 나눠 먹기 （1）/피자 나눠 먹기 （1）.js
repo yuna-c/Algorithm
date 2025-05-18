@@ -1,4 +1,1 @@
-function solution(n) {
-    let answer = Math.ceil(n/7);
-    return answer;
-}
+const solution = (n) => Math.ceil(n/7);
