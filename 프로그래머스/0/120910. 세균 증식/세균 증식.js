@@ -1,6 +1,6 @@
 function solution(n, t) {
     // let answer = n * Math.pow(2, t);
-    let answer = n * 2 ** t;
-    
+    // let answer = n * 2 ** t;
+    let answer = n << t;
     return answer;
 }
