@@ -1,7 +1,4 @@
-function solution(box, n) {
-    return box.reduce((acc, v) => acc * Math.floor(v / n), 1);
-}
-
+const solution = (box, n) => box.reduce((acc, v) => acc * Math.floor(v / n), 1);
 
 // function solution(box, n) {
 //     let [width, length, height] = box;
