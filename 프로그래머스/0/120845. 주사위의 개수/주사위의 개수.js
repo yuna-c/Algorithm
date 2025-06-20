@@ -1,8 +1,13 @@
 function solution(box, n) {
-    let [width, length, height] = box;
-    let answer = Math.floor(width /n) * Math.floor(length /n) * Math.floor(height /n);
-    return answer;
+    return box.reduce((acc, v) => acc * Math.floor(v / n), 1);
 }
+
+
+// function solution(box, n) {
+//     let [width, length, height] = box;
+//     let answer = Math.floor(width /n) * Math.floor(length /n) * Math.floor(height /n);
+//     return answer;
+// }
 
 // function solution(box, n) {
 //     const box0 = Math.floor(box[0]/n);
