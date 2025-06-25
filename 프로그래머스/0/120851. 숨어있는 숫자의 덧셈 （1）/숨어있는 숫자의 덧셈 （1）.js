@@ -8,4 +8,4 @@
 //     return answer;
 // }
 
-const solution = (my_string) => my_string.split('').filter((v)=> !isNaN(v)).map(Number).reduce((acc, cur) => acc + cur, 0)
+const solution = (my_string) => my_string.split('').filter((v)=> !isNaN(v)).reduce((acc, cur) => acc + Number(cur), 0)
