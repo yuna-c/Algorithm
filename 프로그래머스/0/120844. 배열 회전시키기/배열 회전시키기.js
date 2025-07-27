@@ -1,16 +1,29 @@
 function solution(numbers, direction) {
-    let answer = []
-    
     if(direction ==='right'){
-        const after = numbers.pop()
-        answer = [ after, ...numbers]
-        console.log(answer)
+        const last = numbers.pop() // 뒤 제거
+        numbers.unshift(last) // 앞 추가
     }
     else{
-        const before = numbers.shift()
-        answer = [...numbers, before]
-        console.log(answer)
+        const first = numbers.shift() // 앞 제거
+        numbers.push(first) // 뒤 추가
     }
     
-    return answer
+    return numbers
 }
+
+
+// function solution(numbers, direction) {
+//     let answer = []
+    
+//     if(direction ==='right'){
+//         const after = numbers.pop() // 뒤 제거
+//         answer = [ after, ...numbers]
+//     }
+//     else{
+//         const before = numbers.shift() // 앞 제거
+//         answer = [...numbers, before]
+//     }
+    
+//     return answer
+// }
+
